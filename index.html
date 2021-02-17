@@ -4,14 +4,28 @@
   <title>Тег SCRIPT</title>
  </head>
  <body> 
-  <script type="text/javascript">
-    document.write ('<table width="100%" border="1">');
-    for (i=1; i<6; i++) {
-      document.writeln("<tr>");
-      for (j=1; j<6; j++) document.write("<td>" + i + j + "<\/td>");
-      document.writeln("<\/tr>");
+  <div id="vk_ads_131427"></div>
+<script type="text/javascript">
+  setTimeout(function() {
+    var adsParams = {"ad_unit_id":131427,"ad_unit_hash":"7f7f4dc392648e2bc8fb065d3bff5984"};
+    function vkAdsInit() {
+      VK.Widgets.Ads('vk_ads_131427', {}, adsParams);
     }
-    document.write ("<\/table> ");
-  </script>
+    if (window.VK && VK.Widgets) {
+      vkAdsInit();
+    } else {
+      if (!window.vkAsyncInitCallbacks) window.vkAsyncInitCallbacks = [];
+      vkAsyncInitCallbacks.push(vkAdsInit);
+      var protocol = ((location.protocol === 'https:') ? 'https:' : 'http:');
+      var adsElem = document.getElementById('vk_ads_131427');
+      var scriptElem = document.createElement('script');
+      scriptElem.type = 'text/javascript';
+      scriptElem.async = true;
+      scriptElem.src = protocol + '//vk.com/js/api/openapi.js?168';
+      adsElem.parentNode.insertBefore(scriptElem, adsElem.nextSibling);
+    }
+  }, 0);
+</script>
+    
  </body>
 </html>

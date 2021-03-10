@@ -1,5 +1,5 @@
 <?php
-if($_GET['mag']==1){
-echo('good');
-}
+  if($_GET['mag']==1){
+    echo('good');
+  }
 ?>
